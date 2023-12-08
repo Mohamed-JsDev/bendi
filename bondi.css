@@ -1,0 +1,171 @@
+:root{
+    --dark-color: #19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+body{
+        font-family:"Roboto" , sans-serif;
+}
+.main-btn{
+    background-color:var(--red-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem ;
+}
+.main-title::after{
+    content: "" ;
+    background-color: var(--green-color);
+    width: 120px ;
+    height: 2px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    .navbar {
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .nav-link.active ,
+.navbar .nav-item .nav-link:focus, 
+.navbar .nav-item .nav-link:hover{
+    color:var(--green-color)
+    };
+    .navbar .search {
+        border-left: 1px solid var(--green-color);
+    }
+    .navbar .search svg{
+        border-left: 1px solid var(--green-color);
+
+        color: var(--green-color);
+    }
+    .navbar .navbar-toggler {
+        color: white;
+        font-size: 25px;
+        border-color: white;
+    }
+    .navbar .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .landing {
+        background-color: var(--dark-color);
+        min-height: calc(100vh - 72px);
+    }
+    .features .icon-holder {
+        height: 200px;
+    }
+    .features .icon-holder svg {
+        left: 50%;
+        transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color:var(--green-color)
+}
+.features h4{
+    color: var(--yellow-color);
+}
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .links a{
+    color: black;
+    text-decoration: none;
+    padding:.5rem 1rem;
+}
+.our-work .links a:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .links a.active{
+background-color: var(--red-color);
+color: var(--yellow-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: hwb(178deg 21% 36% / 75%) ;
+    width: calc( 100% - 10px);
+    height: calc( 100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition:0.4s ;
+    font-size: 1.5rem;
+    transform: translateX(calc(105% ));
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+.stuff .description {
+    width: 500px;
+}
+.team{
+    background-color: var(--section-color);
+}
+.team .title {
+    color: var(--yellow-color);
+}
+.team .name{
+    background-color: aqua;
+}
+.projects{
+    background-color: var(--dark-color);
+}
+.blog .box{
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    
+    outline: none;
+    border:none;
+    border-bottom: 1px solid white;
+}
+.subscribe ::placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+background-color: var(--dark-color);
+color: var(--yellow-color);
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .one{
+    color: var(--green-color);
+}
+.footer .two{
+    color: var(--yellow-color);
+}
+.footer svg{
+    color: white;
+    border-radius: 50%;
+}
+.footer .face{
+    background-color: #1877f2;
+}
+.footer  .twitter{
+    background-color: #1da1f2;
+}
+.footer  .youtube{  
+    background-color: #ff0000;}
+.footer .linkedin{
+    background-color: #0077b5;
+}
+
